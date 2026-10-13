@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units - Battleplan WWII Strategy Guide</title>
+    <meta name="description" content="Battleplan unit guide. Complete list of all unit types including infantry, tanks, engineers, artillery, and scouts with stats and tactics.">
+    <meta name="keywords" content="Battleplan units, WWII unit types, infantry, tanks, artillery, engineers, scouts, Battleplan guide">
+    <link rel="canonical" href="https://battleplan.wiki/units.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        olive: { 700: '#4A5D23', 600: '#5C7028', 500: '#6B8330', 400: '#8A9E4D' },
+                        khaki: { 600: '#C3B091', 500: '#D4C4A8', 400: '#E5D9C3' },
+                        army: { 900: '#1a1f0f', 800: '#2a3319', 700: '#3d4726', 600: '#4f5c32' },
+                        brass: { 400: '#B5A642', 500: '#C4B84A' }
+                    },
+                    fontFamily: { 'oswald': ['Oswald', 'sans-serif'], 'source': ['Source Sans 3', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        * { box-sizing: border-box; }
+        body { background: linear-gradient(180deg, #1a1f0f 0%, #0f1208 100%); min-height: 100vh; font-family: 'Source Sans 3', sans-serif; }
+        .stamp { font-family: 'Oswald', sans-serif; }
+        .card-military { background: linear-gradient(135deg, rgba(74, 93, 35, 0.3) 0%, rgba(26, 31, 15, 0.9) 100%); border: 1px solid rgba(181, 166, 66, 0.2); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-3px); border-color: rgba(181, 166, 66, 0.5); }
+    </style>
+</head>
+<body class="text-gray-100 antialiased">
+    <header class="sticky top-0 z-50 border-b border-olive-600/30" style="background: rgba(15, 18, 8, 0.95); backdrop-filter: blur(10px);">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between h-20">
+                <a href="/" class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-olive-600 rounded-lg flex items-center justify-center border border-brass-400/50">
+                        <span class="stamp text-brass-400 font-bold text-xl">BP</span>
+                    </div>
+                    <div>
+                        <span class="stamp text-xl text-white tracking-wider">BATTLEPLAN</span>
+                        <span class="block text-xs text-khaki-400/70">WWII Strategy Guide</span>
+                    </div>
+                </a>
+                <nav class="hidden lg:flex items-center gap-1">
+                    <a href="/" class="px-4 py-2 text-khaki-300 hover:text-white hover:bg-olive-600/20 rounded transition-all">Home</a>
+                    <a href="campaigns.html" class="px-4 py-2 text-khaki-300 hover:text-white hover:bg-olive-600/20 rounded transition-all">Campaigns</a>
+                    <a href="units.html" class="px-4 py-2 text-brass-400 bg-olive-600/30 rounded border border-brass-400/30 font-medium">Units</a>
+                    <a href="tactics.html" class="px-4 py-2 text-khaki-300 hover:text-white hover:bg-olive-600/20 rounded transition-all">Tactics</a>
+                    <a href="command.html" class="px-4 py-2 text-khaki-300 hover:text-white hover:bg-olive-600/20 rounded transition-all">Command</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <div class="text-center mb-12">
+            <h1 class="stamp text-4xl md:text-5xl font-bold text-white mb-4 tracking-wider">UNIT <span class="text-brass-400">TYPES</span></h1>
+            <p class="text-gray-400 max-w-2xl mx-auto">Master the division hierarchy. Each unit type has unique strengths and roles on the battlefield.</p>
+        </div>
+
+        <!-- Unit Categories -->
+        <div class="space-y-8">
+            <!-- Infantry -->
+            <div class="card-military rounded-xl overflow-hidden">
+                <div class="bg-olive-700/40 p-6 border-b border-olive-600/30">
+                    <div class="flex items-center gap-4">
+                        <div class="text-5xl">👞</div>
+                        <div>
+                            <h2 class="stamp text-2xl font-bold text-white">INFANTRY</h2>
+                            <p class="text-gray-400 text-sm">The backbone of your division. Versatile and essential.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="bg-army-800/50 rounded-lg p-4">
+                            <h3 class="stamp text-lg font-bold text-brass-400 mb-2">Riflemen</h3>
+                            <p class="text-gray-400 text-sm mb-3">Basic infantry unit. Good for holding positions and urban combat.</p>
+                            <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                                <div><span class="text-white font-bold">45</span><br><span class="text-gray-500">Attack</span></div>
+                                <div><span class="text-white font-bold">30</span><br><span class="text-gray-500">Defense</span></div>
+                                <div><span class="text-white font-bold">Fast</span><br><span class="text-gray-500">Speed</span></div>
+                            </div>
+                        </div>
+                        <div class="bg-army-800/50 rounded-lg p-4">
+                            <h3 class="stamp text-lg font-bold text-brass-400 mb-2">Machine Gunners</h3>
+                            <p class="text-gray-400 text-sm mb-3">High suppression. Essential for defensive positions.</p>
+                            <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                                <div><span class="text-white font-bold">60</span><br><span class="text-gray-500">Attack</span></div>
+                                <div><span class="text-white font-bold">20</span><br><span class="text-gray-500">Defense</span></div>
+                                <div><span class="text-white font-bold">Slow</span><br><span class="text-gray-500">Speed</span></div>
+                            </div>
+                        </div>
+                        <div class="bg-army-800/50 rounded-lg p-4">
+                            <h3 class="stamp text-lg font-bold text-brass-400 mb-2">Anti-Tank</h3>
+                            <p class="text-gray-400 text-sm mb-3">Devastating vs armored units. Vulnerable to infantry.</p>
+                            <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                                <div><span class="text-white font-bold">80</span><br><span class="text-gray-500">Attack</span></div>
+                                <div><span class="text-white font-bold">15</span><br><span class="text-gray-500">Defense</span></div>
+                                <div><span class="text-white font-bold">Med</span><br><span class="text-gray-500">Speed</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Armor -->
+            <div class="card-military rounded-xl overflow-hidden">
+                <div class="bg-olive-700/40 p-6 border-b border-olive-600/30">
+                    <div class="flex items-center gap-4">
+                        <div class="text-5xl">🔱</div>
+                        <div>
+                            <h2 class="stamp text-2xl font-bold text-white">ARMORED UNITS</h2>
+                            <p class="text-gray-400 text-sm">The spearhead of your offensive. Heavy firepower and protection.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="bg-army-800/50 rounded-lg p-4">
+                            <h3 class="stamp text-lg font-bold text-brass-400 mb-2">Medium Tanks</h3>
+                            <p class="text-gray-400 text-sm mb-3">Balanced speed and firepower. The workhorse of armored divisions.</p>
+                            <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                                <div><span class="text-white font-bold">70</span><br><span class="text-gray-500">Attack</span></div>
+                                <div><span class="text-white font-bold">60</span><br><span class="text-gray-500">Defense</span></div>
+                                <div><span class="text-white font-bold">Med</span><br><span class="text-gray-500">Speed</span></div>
+                            </div>
+                        </div>
+                        <div class="bg-army-800/50 rounded-lg p-4">
+                            <h3 class="stamp text-lg font-bold text-brass-400 mb-2">Heavy Tanks</h3>
+                            <p class="text-gray-400 text-sm mb-3">Maximum firepower and armor. Slow but devastating.</p>
+                            <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                                <div><span class="text-white font-bold">90</span><br><span class="text-gray-500">Attack</span></div>
+                                <div><span class="text-white font-bold">85</span><br><span class="text-gray-500">Defense</span></div>
+                                <div><span class="text-white font-bold">Slow</span><br><span class="text-gray-500">Speed</span></div>
+                            </div>
+                        </div>
+                        <div class="bg-army-800/50 rounded-lg p-4">
+                            <h3 class="stamp text-lg font-bold text-brass-400 mb-2">Tank Destroyers</h3>
+                            <p class="text-gray-400 text-sm mb-3">Long-range anti-tank. High damage but fragile.</p>
+                            <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                                <div><span class="text-white font-bold">95</span><br><span class="text-gray-500">Attack</span></div>
+                                <div><span class="text-white font-bold">30</span><br><span class="text-gray-500">Defense</span></div>
+                                <div><span class="text-white font-bold">Med</span><br><span class="text-gray-500">Speed</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Artillery -->
+            <div class="card-military rounded-xl overflow-hidden">
+                <div class="bg-olive-700/40 p-6 border-b border-olive-600/30">
+                    <div class="flex items-center gap-4">
+                        <div class="text-5xl">💣</div>
+                        <div>
+                            <h2 class="stamp text-2xl font-bold text-white">ARTILLERY</h2>
+                            <p class="text-gray-400 text-sm">Long-range fire support. Devastating but needs protection.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="bg-army-800/50 rounded-lg p-4">
+                            <h3 class="stamp text-lg font-bold text-brass-400 mb-2">Field Artillery</h3>
+                            <p class="text-gray-400 text-sm mb-3">Standard indirect fire. Effective against infantry and soft targets.</p>
+                            <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                                <div><span class="text-white font-bold">55</span><br><span class="text-gray-500">Attack</span></div>
+                                <div><span class="text-white font-bold">10</span><br><span class="text-gray-500">Defense</span></div>
+                                <div><span class="text-white font-bold">Slow</span><br><span class="text-gray-500">Speed</span></div>
+                            </div>
+                        </div>
+                        <div class="bg-army-800/50 rounded-lg p-4">
+                            <h3 class="stamp text-lg font-bold text-brass-400 mb-2">Heavy Artillery</h3>
+                            <p class="text-gray-400 text-sm mb-3">Massive damage at long range. Game-changing but rare.</p>
+                            <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                                <div><span class="text-white font-bold">100</span><br><span class="text-gray-500">Attack</span></div>
+                                <div><span class="text-white font-bold">5</span><br><span class="text-gray-500">Defense</span></div>
+                                <div><span class="text-white font-bold">V.Slow</span><br><span class="text-gray-500">Speed</span></div>
+                            </div>
+                        </div>
+                        <div class="bg-army-800/50 rounded-lg p-4">
+                            <h3 class="stamp text-lg font-bold text-brass-400 mb-2">Rocket Artillery</h3>
+                            <p class="text-gray-400 text-sm mb-3">Area denial. High damage spread, slow reload.</p>
+                            <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                                <div><span class="text-white font-bold">85</span><br><span class="text-gray-500">Attack</span></div>
+                                <div><span class="text-white font-bold">15</span><br><span class="text-gray-500">Defense</span></div>
+                                <div><span class="text-white font-bold">Slow</span><br><span class="text-gray-500">Speed</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Engineers -->
+            <div class="card-military rounded-xl overflow-hidden">
+                <div class="bg-olive-700/40 p-6 border-b border-olive-600/30">
+                    <div class="flex items-center gap-4">
+                        <div class="text-5xl">⚙️</div>
+                        <div>
+                            <h2 class="stamp text-2xl font-bold text-white">ENGINEERS</h2>
+                            <p class="text-gray-400 text-sm">Essential for construction, breaching, and river crossings.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-army-800/50 rounded-lg p-4">
+                            <h3 class="stamp text-lg font-bold text-brass-400 mb-2">Combat Engineers</h3>
+                            <p class="text-gray-400 text-sm mb-3">Can create beach exits, bridges, and breach fortifications. Vulnerable in direct combat.</p>
+                            <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                                <div><span class="text-white font-bold">25</span><br><span class="text-gray-500">Attack</span></div>
+                                <div><span class="text-white font-bold">35</span><br><span class="text-gray-500">Defense</span></div>
+                                <div><span class="text-white font-bold">Med</span><br><span class="text-gray-500">Speed</span></div>
+                            </div>
+                        </div>
+                        <div class="bg-army-800/50 rounded-lg p-4">
+                            <h3 class="stamp text-lg font-bold text-brass-400 mb-2">Headquarters</h3>
+                            <p class="text-gray-400 text-sm mb-3">Command and control. Buffs nearby units. Must be protected at all costs.</p>
+                            <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                                <div><span class="text-white font-bold">10</span><br><span class="text-gray-500">Attack</span></div>
+                                <div><span class="text-white font-bold">50</span><br><span class="text-gray-500">Defense</span></div>
+                                <div><span class="text-white font-bold">Slow</span><br><span class="text-gray-500">Speed</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scouts -->
+            <div class="card-military rounded-xl overflow-hidden">
+                <div class="bg-olive-700/40 p-6 border-b border-olive-600/30">
+                    <div class="flex items-center gap-4">
+                        <div class="text-5xl">🔭</div>
+                        <div>
+                            <h2 class="stamp text-2xl font-bold text-white">SCOUTS & RECON</h2>
+                            <p class="text-gray-400 text-sm">Reconnaissance units. Reveal enemy positions and test defenses.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-army-800/50 rounded-lg p-4">
+                            <h3 class="stamp text-lg font-bold text-brass-400 mb-2">Scout Car</h3>
+                            <p class="text-gray-400 text-sm mb-3">Fast reconnaissance. Good for probing enemy lines.</p>
+                            <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                                <div><span class="text-white font-bold">20</span><br><span class="text-gray-500">Attack</span></div>
+                                <div><span class="text-white font-bold">15</span><br><span class="text-gray-500">Defense</span></div>
+                                <div><span class="text-white font-bold">Fast</span><br><span class="text-gray-500">Speed</span></div>
+                            </div>
+                        </div>
+                        <div class="bg-army-800/50 rounded-lg p-4">
+                            <h3 class="stamp text-lg font-bold text-brass-400 mb-2">Cavalry Scouts</h3>
+                            <p class="text-gray-400 text-sm mb-3">Fast and stealthy. Essential for early game reconnaissance.</p>
+                            <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                                <div><span class="text-white font-bold">15</span><br><span class="text-gray-500">Attack</span></div>
+                                <div><span class="text-white font-bold">10</span><br><span class="text-gray-500">Defense</span></div>
+                                <div><span class="text-white font-bold">V.Fast</span><br><span class="text-gray-500">Speed</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t border-olive-600/30 py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-6 text-center text-gray-500 text-sm">
+            <p class="mb-2">Battleplan © 2026 Foolish Mortals Games Inc. / Slitherine Ltd.</p>
+            <p>This is an unofficial fan site. Not affiliated with Slitherine or Foolish Mortals Games.</p>
+            <div class="flex items-center justify-center gap-4 mt-4">
+                <a href="about.html" class="text-khaki-400 hover:text-white transition-colors">About</a>
+                <span>|</span>
+                <a href="privacy-policy.html" class="text-khaki-400 hover:text-white transition-colors">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

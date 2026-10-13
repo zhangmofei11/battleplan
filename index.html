@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleplan - WWII RTS Strategy Guide | Complete Walkthrough</title>
+    <meta name="description" content="Battleplan strategy guide for the WWII real-time strategy game. Master division-level command, battle plans, and historical campaigns from D-Day to Operation Varsity.">
+    <meta name="keywords" content="Battleplan, Battleplan guide, WWII RTS, division command, battle plans, D-Day, Operation Market Garden, Slitherine">
+    <link rel="canonical" href="https://battleplan.wiki/index.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        olive: { 700: '#4A5D23', 600: '#5C7028', 500: '#6B8330', 400: '#8A9E4D' },
+                        khaki: { 600: '#C3B091', 500: '#D4C4A8', 400: '#E5D9C3' },
+                        army: { 900: '#1a1f0f', 800: '#2a3319', 700: '#3d4726', 600: '#4f5c32' },
+                        brass: { 400: '#B5A642', 500: '#C4B84A' }
+                    },
+                    fontFamily: { 'oswald': ['Oswald', 'sans-serif'], 'source': ['Source Sans 3', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        * { box-sizing: border-box; }
+        body { background: linear-gradient(180deg, #1a1f0f 0%, #0f1208 100%); min-height: 100vh; font-family: 'Source Sans 3', sans-serif; }
+        .stamp { font-family: 'Oswald', sans-serif; }
+        .card-military { background: linear-gradient(135deg, rgba(74, 93, 35, 0.3) 0%, rgba(26, 31, 15, 0.9) 100%); border: 1px solid rgba(181, 166, 66, 0.2); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-3px); border-color: rgba(181, 166, 66, 0.5); box-shadow: 0 8px 30px rgba(0,0,0,0.4); }
+    </style>
+</head>
+<body class="text-gray-100 antialiased">
+    <header class="sticky top-0 z-50 border-b border-olive-600/30" style="background: rgba(15, 18, 8, 0.95); backdrop-filter: blur(10px);">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between h-20">
+                <a href="/" class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-olive-600 rounded-lg flex items-center justify-center border border-brass-400/50">
+                        <span class="stamp text-brass-400 font-bold text-xl">BP</span>
+                    </div>
+                    <div>
+                        <span class="stamp text-xl text-white tracking-wider">BATTLEPLAN</span>
+                        <span class="block text-xs text-khaki-400/70">WWII Strategy Guide</span>
+                    </div>
+                </a>
+                <nav class="hidden lg:flex items-center gap-1">
+                    <a href="/" class="px-4 py-2 text-brass-400 bg-olive-600/30 rounded border border-brass-400/30 font-medium">Home</a>
+                    <a href="campaigns.html" class="px-4 py-2 text-khaki-300 hover:text-white hover:bg-olive-600/20 rounded transition-all">Campaigns</a>
+                    <a href="units.html" class="px-4 py-2 text-khaki-300 hover:text-white hover:bg-olive-600/20 rounded transition-all">Units</a>
+                    <a href="tactics.html" class="px-4 py-2 text-khaki-300 hover:text-white hover:bg-olive-600/20 rounded transition-all">Tactics</a>
+                    <a href="command.html" class="px-4 py-2 text-khaki-300 hover:text-white hover:bg-olive-600/20 rounded transition-all">Command</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <!-- Hero Section -->
+        <section class="text-center mb-16">
+            <div class="inline-block px-4 py-1 bg-olive-600/30 border border-brass-400/30 rounded-full mb-6">
+                <span class="text-brass-400 text-sm font-medium">Coming Q3 2026 — Wishlist Now on Steam</span>
+            </div>
+            <h1 class="stamp text-5xl md:text-6xl font-bold text-white mb-6 tracking-wider">
+                <span class="text-brass-400">BATTLE</span>PLAN
+            </h1>
+            <p class="text-xl text-khaki-300 max-w-3xl mx-auto mb-8">
+                Command entire divisions in massive WWII battles. Draw elaborate battle plans on realistic maps and lead your forces through history's most pivotal campaigns.
+            </p>
+            <div class="flex items-center justify-center gap-4">
+                <a href="https://store.steampowered.com/app/3743140/Battleplan/" target="_blank" class="px-8 py-3 bg-olive-600 hover:bg-olive-500 text-white font-semibold rounded-lg transition-colors border border-brass-400/30">
+                    Wishlist on Steam
+                </a>
+                <a href="campaigns.html" class="px-8 py-3 bg-transparent hover:bg-olive-600/30 text-khaki-300 font-semibold rounded-lg transition-colors border border-olive-500/50">
+                    View Campaigns
+                </a>
+            </div>
+        </section>
+
+        <!-- Key Features -->
+        <section class="mb-16">
+            <h2 class="stamp text-3xl font-bold text-white mb-8 tracking-wider text-center">CORE <span class="text-brass-400">FEATURES</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card-military card-hover rounded-xl p-6">
+                    <div class="w-14 h-14 bg-olive-600/40 rounded-xl flex items-center justify-center mb-4 border border-brass-400/30">
+                        <svg class="w-7 h-7 text-brass-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+                    </div>
+                    <h3 class="stamp text-xl font-bold text-white mb-2">Division-Level Command</h3>
+                    <p class="text-gray-400 text-sm">Command entire divisions with realistic hierarchies. Manage headquarters, regiments, battalions, and companies in massive battles.</p>
+                </div>
+                <div class="card-military card-hover rounded-xl p-6">
+                    <div class="w-14 h-14 bg-olive-600/40 rounded-xl flex items-center justify-center mb-4 border border-brass-400/30">
+                        <svg class="w-7 h-7 text-brass-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/></svg>
+                    </div>
+                    <h3 class="stamp text-xl font-bold text-white mb-2">Battle Planning System</h3>
+                    <p class="text-gray-400 text-sm">Draw elaborate, multi-step battle plans directly on the map. Plan offensives like WWII commanders with phase-based operations.</p>
+                </div>
+                <div class="card-military card-hover rounded-xl p-6">
+                    <div class="w-14 h-14 bg-olive-600/40 rounded-xl flex items-center justify-center mb-4 border border-brass-400/30">
+                        <svg class="w-7 h-7 text-brass-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="stamp text-xl font-bold text-white mb-2">Massive Battlefields</h3>
+                    <p class="text-gray-400 text-sm">Maps span thousands of kilometers with real geographic data. Roads, towns, forests, and swamps positioned accurately.</p>
+                </div>
+                <div class="card-military card-hover rounded-xl p-6">
+                    <div class="w-14 h-14 bg-olive-600/40 rounded-xl flex items-center justify-center mb-4 border border-brass-400/30">
+                        <svg class="w-7 h-7 text-brass-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </div>
+                    <h3 class="stamp text-xl font-bold text-white mb-2">Real-Time Simulation</h3>
+                    <p class="text-gray-400 text-sm">Missions simulate second-by-second with pause, play, or fast-forward. Each mission spans one week to one month of in-game time.</p>
+                </div>
+                <div class="card-military card-hover rounded-xl p-6">
+                    <div class="w-14 h-14 bg-olive-600/40 rounded-xl flex items-center justify-center mb-4 border border-brass-400/30">
+                        <svg class="w-7 h-7 text-brass-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+                    </div>
+                    <h3 class="stamp text-xl font-bold text-white mb-2">Logistics & Supply</h3>
+                    <p class="text-gray-400 text-sm">Supply lines are critical. Terrain affects supply flow. Capture supply depots to keep your divisions fighting fit.</p>
+                </div>
+                <div class="card-military card-hover rounded-xl p-6">
+                    <div class="w-14 h-14 bg-olive-600/40 rounded-xl flex items-center justify-center mb-4 border border-brass-400/30">
+                        <svg class="w-7 h-7 text-brass-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="stamp text-xl font-bold text-white mb-2">Historical Campaigns</h3>
+                    <p class="text-gray-400 text-sm">11+ historical missions from D-Day through Operation Varsity. Experience the Western Front campaigns of 1944.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Unit Types -->
+        <section class="mb-16">
+            <h2 class="stamp text-3xl font-bold text-white mb-8 tracking-wider text-center">UNIT <span class="text-brass-400">TYPES</span></h2>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                <div class="card-military card-hover rounded-xl p-4 text-center">
+                    <div class="text-4xl mb-2">👞</div>
+                    <h3 class="stamp text-lg font-bold text-white">Infantry</h3>
+                    <p class="text-gray-500 text-xs mt-1">Foot soldiers</p>
+                </div>
+                <div class="card-military card-hover rounded-xl p-4 text-center">
+                    <div class="text-4xl mb-2">🔱</div>
+                    <h3 class="stamp text-lg font-bold text-white">Tanks</h3>
+                    <p class="text-gray-500 text-xs mt-1">Armored units</p>
+                </div>
+                <div class="card-military card-hover rounded-xl p-4 text-center">
+                    <div class="text-4xl mb-2">⚙️</div>
+                    <h3 class="stamp text-lg font-bold text-white">Engineers</h3>
+                    <p class="text-gray-500 text-xs mt-1">Construction</p>
+                </div>
+                <div class="card-military card-hover rounded-xl p-4 text-center">
+                    <div class="text-4xl mb-2">💣</div>
+                    <h3 class="stamp text-lg font-bold text-white">Artillery</h3>
+                    <p class="text-gray-500 text-xs mt-1">Heavy support</p>
+                </div>
+                <div class="card-military card-hover rounded-xl p-4 text-center">
+                    <div class="text-4xl mb-2">🔭</div>
+                    <h3 class="stamp text-lg font-bold text-white">Scouts</h3>
+                    <p class="text-gray-500 text-xs mt-1">Reconnaissance</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Campaigns Preview -->
+        <section class="mb-16">
+            <h2 class="stamp text-3xl font-bold text-white mb-8 tracking-wider text-center">HISTORICAL <span class="text-brass-400">CAMPAIGNS</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card-military card-hover rounded-xl overflow-hidden">
+                    <div class="bg-olive-700/30 p-4 border-b border-olive-600/30">
+                        <div class="flex items-center justify-between">
+                            <span class="stamp text-brass-400 text-lg">OPERATION OVERLORD</span>
+                            <span class="text-gray-500 text-sm">June 1944</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-gray-400 text-sm mb-4">D-Day and the Normandy landings. Establish a foothold in Fortress Europe.</p>
+                        <a href="campaigns.html" class="text-brass-400 text-sm hover:text-white transition-colors">View Details →</a>
+                    </div>
+                </div>
+                <div class="card-military card-hover rounded-xl overflow-hidden">
+                    <div class="bg-olive-700/30 p-4 border-b border-olive-600/30">
+                        <div class="flex items-center justify-between">
+                            <span class="stamp text-brass-400 text-lg">OPERATION MARKET GARDEN</span>
+                            <span class="text-gray-500 text-sm">Sept 1944</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-gray-400 text-sm mb-4">Bridge too far. Seize the bridges across the Rhine.</p>
+                        <a href="campaigns.html" class="text-brass-400 text-sm hover:text-white transition-colors">View Details →</a>
+                    </div>
+                </div>
+                <div class="card-military card-hover rounded-xl overflow-hidden">
+                    <div class="bg-olive-700/30 p-4 border-b border-olive-600/30">
+                        <div class="flex items-center justify-between">
+                            <span class="stamp text-brass-400 text-lg">OPERATION VARSITY</span>
+                            <span class="text-gray-500 text-sm">March 1945</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-gray-400 text-sm mb-4">The largest airborne operation. Cross the Rhine.</p>
+                        <a href="campaigns.html" class="text-brass-400 text-sm hover:text-white transition-colors">View Details →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- System Requirements -->
+        <section class="mb-16">
+            <h2 class="stamp text-3xl font-bold text-white mb-8 tracking-wider text-center">SYSTEM <span class="text-brass-400">REQUIREMENTS</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <div class="card-military rounded-xl p-6">
+                    <h3 class="stamp text-xl font-bold text-brass-400 mb-4">MINIMUM</h3>
+                    <ul class="space-y-2 text-gray-300 text-sm">
+                        <li>• OS: Windows 10/11 (64-bit)</li>
+                        <li>• RAM: 4 GB</li>
+                        <li>• DirectX 11</li>
+                        <li>• Storage: 10 GB available space</li>
+                    </ul>
+                </div>
+                <div class="card-military rounded-xl p-6">
+                    <h3 class="stamp text-xl font-bold text-brass-400 mb-4">RECOMMENDED</h3>
+                    <ul class="space-y-2 text-gray-300 text-sm">
+                        <li>• OS: Windows 10/11 (64-bit)</li>
+                        <li>• RAM: 8 GB</li>
+                        <li>• DirectX 12</li>
+                        <li>• Storage: 15 GB available space</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-olive-600/30 py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-6 text-center text-gray-500 text-sm">
+            <p class="mb-2">Battleplan © 2026 Foolish Mortals Games Inc. / Slitherine Ltd.</p>
+            <p>This is an unofficial fan site. Not affiliated with Slitherine or Foolish Mortals Games.</p>
+            <div class="flex items-center justify-center gap-4 mt-4">
+                <a href="about.html" class="text-khaki-400 hover:text-white transition-colors">About</a>
+                <span>|</span>
+                <a href="privacy-policy.html" class="text-khaki-400 hover:text-white transition-colors">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

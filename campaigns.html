@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaigns - Battleplan WWII Strategy Guide</title>
+    <meta name="description" content="Battleplan campaign guide. Complete walkthrough for all WWII campaigns including D-Day, Operation Market Garden, and Operation Varsity.">
+    <meta name="keywords" content="Battleplan campaigns, Operation Overlord, D-Day, Market Garden, Operation Varsity, WWII strategy guide">
+    <link rel="canonical" href="https://battleplan.wiki/campaigns.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        olive: { 700: '#4A5D23', 600: '#5C7028', 500: '#6B8330', 400: '#8A9E4D' },
+                        khaki: { 600: '#C3B091', 500: '#D4C4A8', 400: '#E5D9C3' },
+                        army: { 900: '#1a1f0f', 800: '#2a3319', 700: '#3d4726', 600: '#4f5c32' },
+                        brass: { 400: '#B5A642', 500: '#C4B84A' }
+                    },
+                    fontFamily: { 'oswald': ['Oswald', 'sans-serif'], 'source': ['Source Sans 3', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        * { box-sizing: border-box; }
+        body { background: linear-gradient(180deg, #1a1f0f 0%, #0f1208 100%); min-height: 100vh; font-family: 'Source Sans 3', sans-serif; }
+        .stamp { font-family: 'Oswald', sans-serif; }
+        .card-military { background: linear-gradient(135deg, rgba(74, 93, 35, 0.3) 0%, rgba(26, 31, 15, 0.9) 100%); border: 1px solid rgba(181, 166, 66, 0.2); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-3px); border-color: rgba(181, 166, 66, 0.5); }
+    </style>
+</head>
+<body class="text-gray-100 antialiased">
+    <header class="sticky top-0 z-50 border-b border-olive-600/30" style="background: rgba(15, 18, 8, 0.95); backdrop-filter: blur(10px);">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between h-20">
+                <a href="/" class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-olive-600 rounded-lg flex items-center justify-center border border-brass-400/50">
+                        <span class="stamp text-brass-400 font-bold text-xl">BP</span>
+                    </div>
+                    <div>
+                        <span class="stamp text-xl text-white tracking-wider">BATTLEPLAN</span>
+                        <span class="block text-xs text-khaki-400/70">WWII Strategy Guide</span>
+                    </div>
+                </a>
+                <nav class="hidden lg:flex items-center gap-1">
+                    <a href="/" class="px-4 py-2 text-khaki-300 hover:text-white hover:bg-olive-600/20 rounded transition-all">Home</a>
+                    <a href="campaigns.html" class="px-4 py-2 text-brass-400 bg-olive-600/30 rounded border border-brass-400/30 font-medium">Campaigns</a>
+                    <a href="units.html" class="px-4 py-2 text-khaki-300 hover:text-white hover:bg-olive-600/20 rounded transition-all">Units</a>
+                    <a href="tactics.html" class="px-4 py-2 text-khaki-300 hover:text-white hover:bg-olive-600/20 rounded transition-all">Tactics</a>
+                    <a href="command.html" class="px-4 py-2 text-khaki-300 hover:text-white hover:bg-olive-600/20 rounded transition-all">Command</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <div class="text-center mb-12">
+            <h1 class="stamp text-4xl md:text-5xl font-bold text-white mb-4 tracking-wider">HISTORICAL <span class="text-brass-400">CAMPAIGNS</span></h1>
+            <p class="text-gray-400 max-w-2xl mx-auto">Lead your divisions through the pivotal campaigns of the Western Front, 1944-1945.</p>
+        </div>
+
+        <!-- Campaign List -->
+        <div class="space-y-6">
+            <!-- Operation Overlord -->
+            <div class="card-military card-hover rounded-xl overflow-hidden">
+                <div class="bg-olive-700/40 p-6 border-b border-olive-600/30">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <div class="flex items-center gap-3 mb-2">
+                                <span class="stamp text-brass-400 text-2xl">OPERATION OVERLORD</span>
+                                <span class="px-3 py-1 bg-green-500/20 text-green-400 text-xs rounded border border-green-500/30">June 1944</span>
+                            </div>
+                            <p class="text-gray-400 text-sm">D-Day and the Normandy Campaign</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl mb-1">🏖️</div>
+                            <span class="text-gray-500 text-xs">Duration: 2-3 weeks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="stamp text-lg font-bold text-white mb-3">Mission Objectives</h3>
+                            <ul class="space-y-2 text-gray-300 text-sm">
+                                <li>• Establish beachhead across five landing zones</li>
+                                <li>• Secure the port of Cherbourg</li>
+                                <li>• Break through the Normandy hedgerows</li>
+                                <li>• Capture Caen (primary Allied objective)</li>
+                                <li>• Link up with airborne divisions</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="stamp text-lg font-bold text-white mb-3">Strategic Tips</h3>
+                            <ul class="space-y-2 text-gray-300 text-sm">
+                                <li>• Focus engineers early for beach exit creation</li>
+                                <li>• Coordinate artillery with infantry advances</li>
+                                <li>• Supply lines stretch thin—capture depots quickly</li>
+                                <li>• Use scouts to probe German positions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Operation Cobra -->
+            <div class="card-military card-hover rounded-xl overflow-hidden">
+                <div class="bg-olive-700/40 p-6 border-b border-olive-600/30">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <div class="flex items-center gap-3 mb-2">
+                                <span class="stamp text-brass-400 text-2xl">OPERATION COBRA</span>
+                                <span class="px-3 py-1 bg-yellow-500/20 text-yellow-400 text-xs rounded border border-yellow-500/30">July 1944</span>
+                            </div>
+                            <p class="text-gray-400 text-sm">The Breakout from Normandy</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl mb-1">💥</div>
+                            <span class="text-gray-500 text-xs">Duration: 1 week</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="stamp text-lg font-bold text-white mb-3">Mission Objectives</h3>
+                            <ul class="space-y-2 text-gray-300 text-sm">
+                                <li>• Break through German lines at Saint-Lô</li>
+                                <li>• Exploit the gap with armored divisions</li>
+                                <li>• Capture Avranches</li>
+                                <li>• Liberate Brittany ports</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="stamp text-lg font-bold text-white mb-3">Strategic Tips</h3>
+                            <ul class="space-y-2 text-gray-300 text-sm">
+                                <li>• Heavy bomber support available—use it on fortifications</li>
+                                <li>• Armor exploitation is key to success</li>
+                                <li>• Watch for counterattacks from remaining Panzer divisions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Operation Market Garden -->
+            <div class="card-military card-hover rounded-xl overflow-hidden">
+                <div class="bg-olive-700/40 p-6 border-b border-olive-600/30">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <div class="flex items-center gap-3 mb-2">
+                                <span class="stamp text-brass-400 text-2xl">OPERATION MARKET GARDEN</span>
+                                <span class="px-3 py-1 bg-red-500/20 text-red-400 text-xs rounded border border-red-500/30">September 1944</span>
+                            </div>
+                            <p class="text-gray-400 text-sm">A Bridge Too Far — The Rhine Crossings</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl mb-1">🌉</div>
+                            <span class="text-gray-500 text-xs">Duration: 1 week</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="stamp text-lg font-bold text-white mb-3">Mission Objectives</h3>
+                            <ul class="space-y-2 text-gray-300 text-sm">
+                                <li>• Secure bridges at Eindhoven, Nijmegen, Arnhem</li>
+                                <li>• Hold the corridor for ground forces</li>
+                                <li>• Escort armored columns to the north</li>
+                                <li>• Maintain airborne drop zone security</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h class="stamp text-lg font-bold text-white mb-3">Strategic Tips</h3>
+                            <ul class="space-y-2 text-gray-300 text-sm">
+                                <li>• Speed is critical—delays mean disaster</li>
+                                <li>• Coordinate parachute drops with ground advance</li>
+                                <li>• Arnhem bridge is heavily defended—consider alternatives</li>
+                                <li>• Protect supply drops from German interception</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Battle of the Bulge -->
+            <div class="card-military card-hover rounded-xl overflow-hidden">
+                <div class="bg-olive-700/40 p-6 border-b border-olive-600/30">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <div class="flex items-center gap-3 mb-2">
+                                <span class="stamp text-brass-400 text-2xl">BATTLE OF THE BULGE</span>
+                                <span class="px-3 py-1 bg-orange-500/20 text-orange-400 text-xs rounded border border-orange-500/30">December 1944</span>
+                            </div>
+                            <p class="text-gray-400 text-sm">The Last German Offensive</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl mb-1">❄️</div>
+                            <span class="text-gray-500 text-xs">Duration: 1 month</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="stamp text-lg font-bold text-white mb-3">Mission Objectives</h3>
+                            <ul class="space-y-2 text-gray-300 text-sm">
+                                <li>• Defend Bastogne crossroads</li>
+                                <li>• Hold the line against German counteroffensive</li>
+                                <li>• Counterattack to restore the line</li>
+                                <li>• Relieve surrounded 101st Airborne</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="stamp text-lg font-bold text-white mb-3">Strategic Tips</h3>
+                            <ul class="space-y-2 text-gray-300 text-sm">
+                                <li>• Winter weather affects supply and visibility</li>
+                                <li>• Defensive positions in forests are key</li>
+                                <li>• Fuel conservation is critical</li>
+                                <li>• German forces hit hard but lack sustain</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Operation Varsity -->
+            <div class="card-military card-hover rounded-xl overflow-hidden">
+                <div class="bg-olive-700/40 p-6 border-b border-olive-600/30">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <div class="flex items-center gap-3 mb-2">
+                                <span class="stamp text-brass-400 text-2xl">OPERATION VARSITY</span>
+                                <span class="px-3 py-1 bg-purple-500/20 text-purple-400 text-xs rounded border border-purple-500/30">March 1945</span>
+                            </div>
+                            <p class="text-gray-400 text-sm">The Largest Airborne Operation in History</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl mb-1">🪂</div>
+                            <span class="text-gray-500 text-xs">Duration: 3-5 days</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="stamp text-lg font-bold text-white mb-3">Mission Objectives</h3>
+                            <ul class="space-y-2 text-gray-300 text-sm">
+                                <li>• Secure crossing points on the Rhine</li>
+                                <li>• Destroy enemy reserves east of the river</li>
+                                <li>• Link up with ground forces quickly</li>
+                                <li>• Capture Hamminkeln and Wesel</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="stamp text-lg font-bold text-white mb-3">Strategic Tips</h3>
+                            <ul class="space-y-2 text-gray-300 text-sm">
+                                <li>• Glider reinforcements are essential</li>
+                                <li>• Anti-aircraft positions must be silenced</li>
+                                <li>• River crossing requires combined arms</li>
+                                <li>• Speed of linkup determines mission success</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t border-olive-600/30 py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-6 text-center text-gray-500 text-sm">
+            <p class="mb-2">Battleplan © 2026 Foolish Mortals Games Inc. / Slitherine Ltd.</p>
+            <p>This is an unofficial fan site. Not affiliated with Slitherine or Foolish Mortals Games.</p>
+            <div class="flex items-center justify-center gap-4 mt-4">
+                <a href="about.html" class="text-khaki-400 hover:text-white transition-colors">About</a>
+                <span>|</span>
+                <a href="privacy-policy.html" class="text-khaki-400 hover:text-white transition-colors">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

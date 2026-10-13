@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Command System - Battleplan WWII Strategy Guide</title>
+    <meta name="description" content="Battleplan command system guide. Learn how to command divisions, draw battle plans, and manage headquarters in WWII campaigns.">
+    <meta name="keywords" content="Battleplan command system, division command, battle plans, headquarters, command structure, Battleplan guide">
+    <link rel="canonical" href="https://battleplan.wiki/command.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Plus+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        olive: { 700: '#4A5D23', 600: '#5C7028', 500: '#6B8330', 400: '#8A9E4D' },
+                        khaki: { 600: '#C3B091', 500: '#D4C4A8', 400: '#E5D9C3' },
+                        army: { 900: '#1a1f0f', 800: '#2a3319', 700: '#3d4726', 600: '#4f5c32' },
+                        brass: { 400: '#B5A642', 500: '#C4B84A' }
+                    },
+                    fontFamily: { 'oswald': ['Oswald', 'sans-serif'], 'source': ['Source Plus Sans', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        * { box-sizing: border-box; }
+        body { background: linear-gradient(180deg, #1a1f0f 0%, #0f1208 100%); min-height: 100vh; font-family: 'Source Plus Sans', sans-serif; }
+        .stamp { font-family: 'Oswald', sans-serif; }
+        .card-military { background: linear-gradient(135deg, rgba(74, 93, 35, 0.3) 0%, rgba(26, 31, 15, 0.9) 100%); border: 1px solid rgba(181, 166, 66, 0.2); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-3px); border-color: rgba(181, 166, 66, 0.5); }
+    </style>
+</head>
+<body class="text-gray-100 antialiased">
+    <header class="sticky top-0 z-50 border-b border-olive-600/30" style="background: rgba(15, 18, 8, 0.95); backdrop-filter: blur(10px);">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between h-20">
+                <a href="/" class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-olive-600 rounded-lg flex items-center justify-center border border-brass-400/50">
+                        <span class="stamp text-brass-400 font-bold text-xl">BP</span>
+                    </div>
+                    <div>
+                        <span class="stamp text-xl text-white tracking-wider">BATTLEPLAN</span>
+                        <span class="block text-xs text-khaki-400/70">WWII Strategy Guide</span>
+                    </div>
+                </a>
+                <nav class="hidden lg:flex items-center gap-1">
+                    <a href="/" class="px-4 py-2 text-khaki-300 hover:text-white hover:bg-olive-600/20 rounded transition-all">Home</a>
+                    <a href="campaigns.html" class="px-4 py-2 text-khaki-300 hover:text-white hover:bg-olive-600/20 rounded transition-all">Campaigns</a>
+                    <a href="units.html" class="px-4 py-2 text-khaki-300 hover:text-white hover:bg-olive-600/20 rounded transition-all">Units</a>
+                    <a href="tactics.html" class="px-4 py-2 text-khaki-300 hover:text-white hover:bg-olive-600/20 rounded transition-all">Tactics</a>
+                    <a href="command.html" class="px-4 py-2 text-brass-400 bg-olive-600/30 rounded border border-brass-400/30 font-medium">Command</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <div class="text-center mb-12">
+            <h1 class="stamp text-4xl md:text-5xl font-bold text-white mb-4 tracking-wider">COMMAND <span class="text-brass-400">SYSTEM</span></h1>
+            <p class="text-gray-400 max-w-2xl mx-auto">Learn how to command your division effectively using the unique planning interface.</p>
+        </div>
+
+        <!-- Division Structure -->
+        <section class="mb-12">
+            <h2 class="stamp text-2xl font-bold text-white mb-6 tracking-wider flex items-center gap-3">
+                <span class="w-10 h-10 bg-brass-400/20 rounded-lg flex items-center justify-center text-brass-400">🏛️</span>
+                DIVISION HIERARCHY
+            </h2>
+            <div class="card-military rounded-xl p-6 mb-6">
+                <div class="flex items-center justify-center gap-4 mb-8">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-olive-600/50 rounded-xl flex items-center justify-center border-2 border-brass-400 mx-auto mb-2">
+                            <span class="stamp text-brass-400 font-bold text-2xl">HQ</span>
+                        </div>
+                        <span class="text-gray-400 text-sm">Headquarters</span>
+                    </div>
+                    <div class="text-3xl text-brass-400">→</div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-olive-600/50 rounded-xl flex items-center justify-center border border-olive-400 mx-auto mb-2">
+                            <span class="stamp text-olive-400 font-bold text-xl">RGT</span>
+                        </div>
+                        <span class="text-gray-400 text-sm">Regiments</span>
+                    </div>
+                    <div class="text-3xl text-brass-400">→</div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-olive-600/50 rounded-xl flex items-center justify-center border border-olive-400 mx-auto mb-2">
+                            <span class="stamp text-olive-400 font-bold text-xl">BN</span>
+                        </div>
+                        <span class="text-gray-400 text-sm">Battalions</span>
+                    </div>
+                    <div class="text-3xl text-brass-400">→</div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-olive-600/50 rounded-xl flex items-center justify-center border border-olive-400 mx-auto mb-2">
+                            <span class="stamp text-olive-400 font-bold text-xl">CO</span>
+                        </div>
+                        <span class="text-gray-400 text-sm">Companies</span>
+                    </div>
+                </div>
+                <p class="text-gray-400 text-sm text-center">Your division operates through a realistic military hierarchy. Each level has specific capabilities and limitations.</p>
+            </div>
+        </section>
+
+        <!-- Battle Planning -->
+        <section class="mb-12">
+            <h2 class="stamp text-2xl font-bold text-white mb-6 tracking-wider flex items-center gap-3">
+                <span class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center text-blue-400">📋</span>
+                BATTLE PLANNING INTERFACE
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="card-military card-hover rounded-xl p-6">
+                    <h3 class="stamp text-xl font-bold text-brass-400 mb-3">Drawing Battle Plans</h3>
+                    <p class="text-gray-400 text-sm mb-4">The unique planning interface lets you draw multi-step operations directly on the map, just like WWII commanders did.</p>
+                    <ul class="space-y-2 text-gray-300 text-sm">
+                        <li>• Click and drag to draw movement routes</li>
+                        <li>• Set waypoints for complex maneuvers</li>
+                        <li>• Define phase lines for timed operations</li>
+                        <li>• Assign objectives to specific units</li>
+                    </ul>
+                </div>
+                <div class="card-military card-hover rounded-xl p-6">
+                    <h3 class="stamp text-xl font-bold text-brass-400 mb-3">Phase-Based Operations</h3>
+                    <p class="text-gray-400 text-sm mb-4">Break complex operations into phases. Each phase can have different objectives and timing.</p>
+                    <ul class="space-y-2 text-gray-300 text-sm">
+                        <li>• Phase 1: Initial advance and reconnaissance</li>
+                        <li>• Phase 2: Main attack element commitment</li>
+                        <li>• Phase 3: Exploitation and pursuit</li>
+                        <li>• Adjust timing based on conditions</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Time Control -->
+        <section class="mb-12">
+            <h2 class="stamp text-2xl font-bold text-white mb-6 tracking-wider flex items-center gap-3">
+                <span class="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center text-purple-400">⏱️</span>
+                TIME CONTROL
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="card-military rounded-xl p-4 text-center">
+                    <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                        <span class="text-2xl">⏸️</span>
+                    </div>
+                    <h3 class="stamp text-lg font-bold text-white mb-1">Pause</h3>
+                    <p class="text-gray-500 text-xs">Issue orders without time pressure</p>
+                </div>
+                <div class="card-military rounded-xl p-4 text-center">
+                    <div class="w-12 h-12 bg-yellow-500/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                        <span class="text-2xl">▶️</span>
+                    </div>
+                    <h3 class="stamp text-lg font-bold text-white mb-1">Normal</h3>
+                    <p class="text-gray-500 text-xs">Real-time simulation speed</p>
+                </div>
+                <div class="card-military rounded-xl p-4 text-center">
+                    <div class="w-12 h-12 bg-orange-500/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                        <span class="text-2xl">⏩</span>
+                    </div>
+                    <h3 class="stamp text-lg font-bold text-white mb-1">Fast</h3>
+                    <p class="text-gray-500 text-xs">2x speed for less critical moments</p>
+                </div>
+                <div class="card-military rounded-xl p-4 text-center">
+                    <div class="w-12 h-12 bg-red-500/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                        <span class="text-2xl">⏭️</span>
+                    </div>
+                    <h3 class="stamp text-lg font-bold text-white mb-1">Ultra</h3>
+                    <p class="text-gray-500 text-xs">4x speed for long marches</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- HQ Commands -->
+        <section class="mb-12">
+            <h2 class="stamp text-2xl font-bold text-white mb-6 tracking-wider flex items-center gap-3">
+                <span class="w-10 h-10 bg-red-500/20 rounded-lg flex items-center justify-center text-red-400">🎖️</span>
+                HEADQUARTERS COMMANDS
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="card-military rounded-xl p-5">
+                    <h3 class="stamp text-lg font-bold text-brass-400 mb-2">Direct Command</h3>
+                    <p class="text-gray-400 text-sm">Take direct control of any unit. Useful for critical moments.</p>
+                </div>
+                <div class="card-military rounded-xl p-5">
+                    <h3 class="stamp text-lg font-bold text-brass-400 mb-2">Delegated Command</h3>
+                    <p class="text-gray-400 text-sm">Let AI handle routine operations while you focus on strategy.</p>
+                </div>
+                <div class="card-military rounded-xl p-5">
+                    <h3 class="stamp text-lg font-bold text-brass-400 mb-2">Request Reinforcements</h3>
+                    <p class="text-gray-400 text-sm">Contact HQ for replacement troops and equipment.</p>
+                </div>
+                <div class="card-military rounded-xl p-5">
+                    <h3 class="stamp text-lg font-bold text-brass-400 mb-2">Air Support</h3>
+                    <p class="text-gray-400 text-sm">Call in tactical air support for critical targets.</p>
+                </div>
+                <div class="card-military rounded-xl p-5">
+                    <h3 class="stamp text-lg font-bold text-brass-400 mb-2">Artillery Fire Mission</h3>
+                    <p class="text-gray-400 text-sm">Coordinate indirect fire from artillery batteries.</p>
+                </div>
+                <div class="card-military rounded-xl p-5">
+                    <h3 class="stamp text-lg font-bold text-brass-400 mb-2">Supply Request</h3>
+                    <p class="text-gray-400 text-sm">Request fuel, ammunition, and medical supplies.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section>
+            <h2 class="stamp text-2xl font-bold text-white mb-6 tracking-wider">COMMAND <span class="text-brass-400">TIPS</span></h2>
+            <div class="card-military rounded-xl p-6">
+                <div class="space-y-4">
+                    <div class="flex items-start gap-4 p-4 bg-army-800/50 rounded-lg">
+                        <span class="text-2xl">💡</span>
+                        <div>
+                            <h3 class="stamp text-lg font-bold text-white mb-1">Plan Before You Execute</h3>
+                            <p class="text-gray-400 text-sm">Use pause time to draw complete battle plans before starting operations. Improvisation often leads to disaster.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 p-4 bg-army-800/50 rounded-lg">
+                        <span class="text-2xl">🎯</span>
+                        <div>
+                            <h3 class="stamp text-lg font-bold text-white mb-1">Focus on the Objective</h3>
+                            <p class="text-gray-400 text-sm">Don't get caught up in every skirmish. Stay focused on primary objectives—secondary targets can be cleaned up later.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 p-4 bg-army-800/50 rounded-lg">
+                        <span class="text-2xl">🛡️</span>
+                        <div>
+                            <h3 class="stamp text-lg font-bold text-white mb-1">Protect Your HQ</h3>
+                            <p class="text-gray-400 text-sm">If your Headquarters unit is destroyed, command efficiency drops dramatically. Always keep it protected in the rear.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-olive-600/30 py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-6 text-center text-gray-500 text-sm">
+            <p class="mb-2">Battleplan © 2026 Foolish Mortals Games Inc. / Slitherine Ltd.</p>
+            <p>This is an unofficial fan site. Not affiliated with Slitherine or Foolish Mortals Games.</p>
+            <div class="flex items-center justify-center gap-4 mt-4">
+                <a href="about.html" class="text-khaki-400 hover:text-white transition-colors">About</a>
+                <span>|</span>
+                <a href="privacy-policy.html" class="text-khaki-400 hover:text-white transition-colors">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
