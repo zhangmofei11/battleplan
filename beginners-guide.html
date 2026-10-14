@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner's Guide - Battleplan WWII RTS Strategy</title>
+    <meta name="description" content="Battleplan beginner's guide with essential tips for new players. Learn division commands, resource management, and basic tactics for WWII campaigns.">
+    <meta name="keywords" content="Battleplan beginner guide, Battleplan tips, WWII RTS guide, division command tutorial, new player guide, Slitherine strategy game">
+    <link rel="canonical" href="https://battleplan.online/beginners-guide.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        olive: { 700: '#4A5D23', 600: '#5C7028', 500: '#6B8330', 400: '#8A9E4D' },
+                        khaki: { 600: '#C3B091', 500: '#D4C4A8', 400: '#E5D9C3' },
+                        army: { 900: '#1a1f0f', 800: '#2a3319', 700: '#3d4726', 600: '#4f5c32' },
+                        brass: { 400: '#B5A642', 500: '#C4B84A' }
+                    },
+                    fontFamily: { 'oswald': ['Oswald', 'sans-serif'], 'source': ['Source Sans 3', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-09Q743BF93"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-09Q743BF93');
+    </script>
+    <script async="async" data-cfasync="false" src="https://bauval.org/21/dda0038a529b2eb0582e4671bae3856e"></script>
+    <script data-cfasync="false" src="https://bauval.org/14/f2c29cadb5eff7d0c0ba6a37d574bae9"></script>
+    <script>
+      atOptions = { 'key' : 'd8b0901d81801dc1cf952629be349883', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };
+    </script>
+    <script src="https://bauval.org/22/d8b0901d81801dc1cf952629be349883"></script>
+    <style>
+        * { box-sizing: border-box; }
+        body { background: linear-gradient(180deg, #1a1f0f 0%, #0f1208 100%); min-height: 100vh; font-family: 'Source Sans 3', sans-serif; }
+        .stamp { font-family: 'Oswald', sans-serif; }
+        .card-military { background: linear-gradient(135deg, rgba(74, 93, 35, 0.3) 0%, rgba(26, 31, 15, 0.9) 100%); border: 1px solid rgba(181, 166, 66, 0.2); }
+        .card-hover:hover { transform: translateY(-3px); border-color: rgba(181, 166, 66, 0.5); }
+    </style>
+</head>
+<body class="text-khaki-400 antialiased">
+    <header class="card-military sticky top-0 z-50 border-b border-brass-400/20">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded bg-gradient-to-br from-olive-600 to-olive-700 flex items-center justify-center">
+                        <span class="stamp text-xl text-khaki-400">★</span>
+                    </div>
+                    <div>
+                        <span class="stamp font-bold text-2xl text-khaki-400">BATTLEPLAN</span>
+                        <span class="block text-xs text-olive-400 tracking-widest">WWII RTS STRATEGY</span>
+                    </div>
+                </a>
+                <nav class="hidden lg:flex items-center gap-2 text-sm">
+                    <a href="/" class="px-3 py-2 text-khaki-400/70 hover:text-khaki-400 hover:bg-white/5 rounded transition-all">Home</a>
+                    <a href="beginners-guide.html" class="px-3 py-2 text-khaki-400 bg-olive-700/50 rounded border border-brass-400/30">Beginner Guide</a>
+                    <a href="campaigns.html" class="px-3 py-2 text-khaki-400/70 hover:text-khaki-400 hover:bg-white/5 rounded transition-all">Campaigns</a>
+                    <a href="units.html" class="px-3 py-2 text-khaki-400/70 hover:text-khaki-400 hover:bg-white/5 rounded transition-all">Units</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <section class="text-center mb-12">
+            <h1 class="stamp text-4xl md:text-5xl font-black text-khaki-400 mb-4">BEGINNER'S GUIDE</h1>
+            <p class="text-khaki-400/60 max-w-2xl mx-auto">Essential tips for commanding your first divisions</p>
+        </section>
+
+        <div class="h-0.5 bg-gradient-to-r from-transparent via-brass-400 to-transparent mb-12"></div>
+
+        <!-- Getting Started -->
+        <section class="mb-12">
+            <h2 class="stamp text-2xl font-bold text-brass-400 mb-6">⚔ Getting Started</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="card-military rounded-xl p-6 card-hover">
+                    <h3 class="stamp text-lg font-bold text-khaki-400 mb-3">1. Choose Your Campaign</h3>
+                    <p class="text-khaki-400/70 text-sm mb-4">Start with the D-Day campaign for a balanced introduction to division-level tactics. The campaign progressively introduces new unit types and strategies.</p>
+                    <ul class="text-khaki-400/50 text-xs space-y-1">
+                        <li>• D-Day: Infantry and armored assault tactics</li>
+                        <li>• Market Garden: Paratrooper coordination</li>
+                        <li>• Operation Varsity: River crossing operations</li>
+                    </ul>
+                </div>
+                <div class="card-military rounded-xl p-6 card-hover">
+                    <h3 class="stamp text-lg font-bold text-khaki-400 mb-3">2. Understand Divisions</h3>
+                    <p class="text-khaki-400/70 text-sm mb-4">Each division has unique strengths. US divisions excel at air support, British at naval bombardment, Germans at defensive fortification.</p>
+                    <ul class="text-khaki-400/50 text-xs space-y-1">
+                        <li>• Infantry divisions: Balanced ground forces</li>
+                        <li>• Armored divisions: Breakthrough punch</li>
+                        <li>• Airborne divisions: Fast deployment</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Basic Controls -->
+        <section class="mb-12">
+            <h2 class="stamp text-2xl font-bold text-brass-400 mb-6">🎮 Basic Controls</h2>
+            <div class="card-military rounded-xl p-6">
+                <div class="grid md:grid-cols-3 gap-6 text-sm">
+                    <div>
+                        <h3 class="stamp font-bold text-khaki-400 mb-2">Mouse Controls</h3>
+                        <ul class="text-khaki-400/60 space-y-1 text-xs">
+                            <li>• Left Click: Select unit/area</li>
+                            <li>• Right Click: Move/Attack command</li>
+                            <li>• Scroll: Zoom in/out</li>
+                            <li>• Middle Drag: Pan camera</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="stamp font-bold text-khaki-400 mb-2">Keyboard Shortcuts</h3>
+                        <ul class="text-khaki-400/60 space-y-1 text-xs">
+                            <li>• Space: Center on selection</li>
+                            <li>• Delete: Deselect all</li>
+                            <li>• H: Halt movement</li>
+                            <li>• G: Guard position</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="stamp font-bold text-khaki-400 mb-2">Formation Commands</h3>
+                        <ul class="text-khaki-400/60 space-y-1 text-xs">
+                            <li>• Line: Press L</li>
+                            <li>• Column: Press C</li>
+                            <li>• Staggered: Press S</li>
+                            <li>• Box: Press B</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section class="mb-12">
+            <h2 class="stamp text-2xl font-bold text-brass-400 mb-6">💡 Essential Tips</h2>
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="card-military rounded-xl p-5 card-hover">
+                    <h3 class="stamp font-bold text-khaki-400 mb-2">Supply Lines Matter</h3>
+                    <p class="text-khaki-400/60 text-sm">Units without supply run out of ammunition. Keep supply depots close to your front lines and protect supply convoys.</p>
+                </div>
+                <div class="card-military rounded-xl p-5 card-hover">
+                    <h3 class="stamp font-bold text-khaki-400 mb-2">Recon Before Attack</h3>
+                    <p class="text-khaki-400/60 text-sm">Use reconnaissance units to spot enemy positions. Hidden AT guns and snipers can devastate unprepared assaults.</p>
+                </div>
+                <div class="card-military rounded-xl p-5 card-hover">
+                    <h3 class="stamp font-bold text-khaki-400 mb-2">Combined Arms</h3>
+                    <p class="text-khaki-400/60 text-sm">Infantry supports tanks. Artillery softens defenses. Air support destroys concentrations. Never rely on one unit type.</p>
+                </div>
+                <div class="card-military rounded-xl p-5 card-hover">
+                    <h3 class="stamp font-bold text-khaki-400 mb-2">Weather Effects</h3>
+                    <p class="text-khaki-400/60 text-sm">Fog reduces visibility. Rain slows movement. Snow hampers vehicles. Plan operations around weather conditions.</p>
+                </div>
+                <div class="card-military rounded-xl p-5 card-hover">
+                    <h3 class="stamp font-bold text-khaki-400 mb-2">Night Operations</h3>
+                    <p class="text-khaki-400/60 text-sm">Night attacks reduce enemy accuracy but also yours. Use well-rested troops and prefer defensive positions.</p>
+                </div>
+                <div class="card-military rounded-xl p-5 card-hover">
+                    <h3 class="stamp font-bold text-khaki-400 mb-2">Terrain Bonus</h3>
+                    <p class="text-khaki-400/60 text-sm">Forest provides concealment. Hills offer sight lines. Rivers block movement. Exploit terrain for defensive advantage.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Mistakes -->
+        <section class="mb-12">
+            <h2 class="stamp text-2xl font-bold text-brass-400 mb-6">⚠️ Common Beginner Mistakes</h2>
+            <div class="card-military rounded-xl p-6">
+                <div class="space-y-4">
+                    <div class="flex gap-4">
+                        <span class="text-red-400 text-xl">✗</span>
+                        <div>
+                            <h3 class="stamp font-bold text-khaki-400">Ignoring Unit Fatigue</h3>
+                            <p class="text-khaki-400/60 text-sm">Exhausted units have reduced accuracy and speed. Rotate tired units with reserves.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="text-red-400 text-xl">✗</span>
+                        <div>
+                            <h3 class="stamp font-bold text-khaki-400">Overextending Supply Lines</h3>
+                            <p class="text-khaki-400/60 text-sm">Push too far without supply dumps and your offensive grinds to a halt.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="text-red-400 text-xl">✗</span>
+                        <div>
+                            <h3 class="stamp font-bold text-khaki-400">No Strategic Reserves</h3>
+                            <p class="text-khaki-400/60 text-sm">Committing all units leaves you unable to respond to unexpected threats.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="flex justify-center py-8">
+            <div id="container-dda0038a529b2eb0582e4671bae3856e"></div>
+        </div>
+    </main>
+
+    <footer class="border-t border-brass-400/10 py-8 mt-8">
+        <div class="max-w-6xl mx-auto px-6 text-center text-khaki-400/40 text-sm">
+            <p>&copy; 2026 Battleplan Strategy Guide. Not affiliated with Slitherine Matrix Games.</p>
+        </div>
+    </footer>
+</body>
+</html>

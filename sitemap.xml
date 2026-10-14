@@ -42,4 +42,28 @@
         <changefreq>monthly</changefreq>
         <priority>0.3</priority>
     </url>
+    <url>
+        <loc>https://battleplan.wiki/beginners-guide.html</loc>
+        <lastmod>2026-10-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://battleplan.wiki/achievements.html</loc>
+        <lastmod>2026-10-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://battleplan.wiki/tips.html</loc>
+        <lastmod>2026-10-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://battleplan.wiki/divisions.html</loc>
+        <lastmod>2026-10-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
