@@ -45,6 +45,52 @@
         .card-military { background: linear-gradient(135deg, rgba(74, 93, 35, 0.3) 0%, rgba(26, 31, 15, 0.9) 100%); border: 1px solid rgba(181, 166, 66, 0.2); }
         .card-hover:hover { transform: translateY(-3px); border-color: rgba(181, 166, 66, 0.5); }
     </style>
+
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://battleplan.online/#website",
+          "name": "Battleplan",
+          "url": "https://battleplan.online/",
+          "inLanguage": "en"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://battleplan.online/beginners-guide.html#webpage",
+          "url": "https://battleplan.online/beginners-guide.html",
+          "name": "Beginner's Guide - Battleplan WWII RTS Strategy",
+          "description": "Battleplan beginner",
+          "isPartOf": {
+            "@id": "https://battleplan.online/#website"
+          },
+          "breadcrumb": {
+            "@id": "https://battleplan.online/beginners-guide.html#breadcrumb"
+          },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://battleplan.online/beginners-guide.html#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://battleplan.online/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Beginner's Guide - Battleplan WWII RTS Strategy"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
 </head>
 <body class="text-khaki-400 antialiased">
     <header class="card-military sticky top-0 z-50 border-b border-brass-400/20">
