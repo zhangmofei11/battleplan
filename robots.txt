@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://battleplan.wiki/sitemap.xml
