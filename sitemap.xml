@@ -1,67 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://battleplan.wiki/</loc>
+        <loc>https://battleplan.online/</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://battleplan.wiki/campaigns.html</loc>
+        <loc>https://battleplan.online/campaigns.html</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://battleplan.wiki/units.html</loc>
+        <loc>https://battleplan.online/units.html</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://battleplan.wiki/tactics.html</loc>
+        <loc>https://battleplan.online/tactics.html</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://battleplan.wiki/command.html</loc>
+        <loc>https://battleplan.online/command.html</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://battleplan.wiki/about.html</loc>
+        <loc>https://battleplan.online/about.html</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://battleplan.wiki/privacy-policy.html</loc>
+        <loc>https://battleplan.online/privacy-policy.html</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.3</priority>
     </url>
     <url>
-        <loc>https://battleplan.wiki/beginners-guide.html</loc>
+        <loc>https://battleplan.online/beginners-guide.html</loc>
         <lastmod>2026-10-14</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://battleplan.wiki/achievements.html</loc>
+        <loc>https://battleplan.online/achievements.html</loc>
         <lastmod>2026-10-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://battleplan.wiki/tips.html</loc>
+        <loc>https://battleplan.online/tips.html</loc>
         <lastmod>2026-10-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://battleplan.wiki/divisions.html</loc>
+        <loc>https://battleplan.online/divisions.html</loc>
         <lastmod>2026-10-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
